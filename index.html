@@ -161,7 +161,7 @@
             for (const header of tableHeaders) {
                 const hCell = document.createElement("th");
                 const text = document.createTextNode(header);
-                cell.appendChild(text);
+                hCell.appendChild(text);
                 headerRow.appendChild(hCell);
             }
             tableBody.appendChild(headerRow);
@@ -174,7 +174,7 @@
                     const cell = document.createElement("td");
                     const text = document.createTextNode(value);
                     cell.appendChild(text);
-                    row.appendChild(cell);
+                    tabRow.appendChild(cell);
                 }
                 tableBody.appendChild(tabRow);
             }
